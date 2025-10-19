@@ -4,196 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
-    <title>Portfolio</title>
+    <title>Võ Anh Khải | Software Engineering</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- Header / Navigation -->
     <header class="header">
         <a href="#home" class="logo">Portfolio</a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>  
-            <a href="#certificates">Certificates</a>    
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>   
+            <button id="theme-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </button>
         </nav>
     </header>
 
+    <!-- Home / Hero -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Khai</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Front-End Developer from Vietnam. 
-                I'm passionate about learning and creating. 
-                I love to explore new technologies and learn from them. 
-                I'm always looking for new challenges to push myself and my skills. 
-                I believe that with hard work and dedication, 
-                I can achieve my goals and make a positive impact on the world.
+            <h1>Võ Anh Khải<span></span></h1>
+            <h3 class="text-animation">I'm a <span></span> from Vietnam.</h3>
+            <p>
+				Passionate about learning, exploring new technologies. 
+				With hard work and dedication, I believe it will be a solid foundation to
+				help me achieve big career goals and positively impact the world.
             </p>
             
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/kaitodeus/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/VoAnhKhai2005"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/kaitovo8952/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/_kai.desu/"><i class='bx bxl-instagram'></i></a>
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="#skills" class="btn">View my Skills</a>
+                <a href="#" class="btn">Download CV</a>
             </div>
         </div>
+    </section>
 
-        <div class="home-img">
-            <img src="img/avatar.jpg" alt="Profile Image">
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="profile">
+            <img src="img/avatar.jpg" alt="Avatar">
+            <img src="img/avatar1.jpg" alt="Avatar">
+            <img src="img/avatar2.jpg" alt="Avatar">
+            <img src="img/avatar3.jpg" alt="Avatar">
+        </div>
+        <div class="about-text">
+            <h2 class="heading">About me</h2>
+            <p>I am a 3rd year student studying at the Ho Chi Minh University of Transport, majoring in Information Technology. 
+                As a software engineer, I am passionate about designing, building, and developing various projects, from websites, applications and especially games.</p>
+            <p><b style="color: #fd9903;">Career Objective</b> <br> Become a Senior Game Developer, have owner's personal game project, which can be done using Unity or Unreal Engine.</p>
+            <p><b style="color: #fd9903;">Hobbies</b> <br> I love playing video games, designing, programming, and learning new technologies.</p>
+            <div class="about-contact">
+                <p><span class="icon">@</span> khaivo300605@gmail.com</p>
+                <p><span class="icon">📍</span> Phường 7, Quận Bình Thạnh, TP.HCM</p>
+                <p><span class="icon">📱</span> +84 012 345 6789</p>
+            </div>
+        <a href="#" class="btn">Download CV</a>
         </div>
     </section>
     
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-       
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020</div>
-                    <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>TP.HCM</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>TP.HCM</p>
-                    </div>   
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2026</div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <p>TP.HCM</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2027</div>
-                    <div class="timeline-content">
-                        <h3>First Job</h3>
-                        <p>TP.HCM</p>
-                    </div>
-            </div>
-        </div>
+    <!-- Skills (placeholder) -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My Skills</h2>
+        <!-- Add skill items here -->
     </section>
 
+    <!-- Projects (placeholder) -->
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
-
-        <div class="projects-container">
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>UI Design</h4>
-                    <p>TP. HCM</p>
-                </div>
-            </div>
-             
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>Frontend Development</h4>
-                    <p>TP. HCM</p>
-                </div>
-            </div>
-              
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>Backend Development</h4>
-                    <p>TP. HCM</p>
-                </div>
-            </div>
-        
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>Testing</h4>
-                    <p>TP. HCM</p>
-                </div>
-            </div>
-        </div>
+        <!-- Add project cards here -->
     </section>
 
-    <section class="certificates" id="certificates">
-        <div class="certificates-box">
-            <h2 class="heading">Certificates</h2>
-
-            <div class="wrapper">
-                <div class="certificate-item">
-                    <img src="./img/vocational-school.jpg" alt="highschool">
-                    <h2>High School</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                    </div>
-                    <p>Description</p>
-                </div>
-
-                <div class="certificate-item">
-                    <img src="./img/university.jpg" alt="university">
-                    <h2>University</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                    </div>
-                    <p>Description</p>
-                </div>
-
-                <div class="certificate-item">
-                    <img src="./img/english.jpg" alt="english">
-                    <h2>English</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>Description</p>
-                </div>
-
-                <div class="certificate-item">
-                    <img src="./img/office.jpg" alt="office">
-                    <h2>Office</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i> 
-                    </div>
-                    <p>Description</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Contact -->
+    <!-- Liên hệ: form liên hệ cơ bản -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-
         <form action="">
-            <div class="input-group">
+            <div class="input-group">   
                 <div class="input-box">
                     <input type="text" placeholder="Full Name">
                     <input type="email" placeholder="Email">
@@ -209,31 +109,17 @@
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/kaitodeus/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/VoAnhKhai2005"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/kaitovo8952/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/_kai.desu/"><i class='bx bxl-instagram'></i></a>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-        </div>
-
-        <ul class="list">
-            <li>
-                <a href="#contact">FAQ</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#home">About me</a>
-            </li>
-            <li>
-                <a href="#certificates">Certificates</a>
-            </li>
-        </ul>
-        <p class="copyright">Copyright &copy; 2025 Khai Vo Anh</p>
+        <p class="copyright">&copy; Copyright 2025 Võ Anh Khải. All rights reserved.</p>
+        <p class="major">Software Engineering</p>
     </footer>
 
     <script src="script.js"></script>
