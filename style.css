@@ -7,16 +7,6 @@
     outline: none;
     scroll-behavior: smooth; /* Cuộn mượt cho toàn trang */
     font-family: "Verdana", sans-serif;
-    }
-/* ===== Hiệu ứng xuất hiện cho các section ===== */
-section.section-appear {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: opacity 0.7s cubic-bezier(.4,1.4,.6,1), transform 0.7s cubic-bezier(.4,1.4,.6,1);
-}
-section.section-visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 :root {
     --bg-color: white;
@@ -183,6 +173,7 @@ span {
 .btn {
     display: inline-block;
     padding: 1.5rem 2.8rem;
+    margin-top: 15px;
     background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
@@ -195,8 +186,8 @@ span {
     cursor: pointer;
 }
 .btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 50px var(--main-color);
+    transform: scale(0.95);
+    box-shadow: 0 0 25px var(--main-color);
 }
 .btn-group {
     display: flex;
@@ -309,17 +300,17 @@ span {
     text-align: center;
 }
 
-/* --- Profile: 4 images --- */
 .profile {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 
 .profile img {
-    width: 250px;
-    height: 250px;
-    border: 2px solid #22e2d3;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #22e2d3;
+    border-radius: 60%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -357,12 +348,12 @@ span {
 }
 
 .about-contact {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .about-contact p {
-    margin: 8px 0;
-    margin-bottom: 10px;
+    margin: 6px 0;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
 }
@@ -377,41 +368,52 @@ span {
     align-items: center;
     justify-content: center;
 }
-.skills .heading {
+.skills h2 {
     color: var(--text-color);
+    border-bottom: 3px solid var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 60px 0 80px 0;
-    margin: 4rem 0 3rem;
+    padding-bottom: 5px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
     font-size: 4.5rem;
     text-align: center;
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    justify-items: center;
+    flex: 1;
 }
 .skill-card {
     background: var(--bg-color);
-    border-radius: 18px;
-    box-shadow: 0 2px 16px var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--main-color);
     display: flex;
+    flex: 1;
+    text-align: left;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px 18px 22px 18px;
-    min-width: 140px;
-    min-height: 140px;
+    padding: 20px 14px 18px 14px;
+    min-width: 50px;
+    min-height: 50px;
     transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
     opacity: 0;
     transform: translateY(40px);
 }
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 .skill-card .skill-icon {
     font-size: 4.2rem;
     margin-bottom: 18px;
@@ -429,6 +431,16 @@ span {
     box-shadow: 0 4px 16px #2cdbd8;
     transform: scale(0.97) translateY(-6px);
     z-index: 2;
+}
+.skills-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  margin-left: 20px;
+  box-shadow: 0 0 20px rgba(34, 226, 211, 0.5);
+  transition: transform 0.4s ease;
 }
 .skill-card.skill-visible {
     opacity: 1;

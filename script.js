@@ -11,6 +11,7 @@ function showSectionsOnScroll() {
 }
 window.addEventListener('scroll', showSectionsOnScroll);
 window.addEventListener('DOMContentLoaded', showSectionsOnScroll);
+
 // ===== Hiệu ứng xuất hiện cho skills khi scroll (Tiếng Việt) =====
 function showSkillsOnScroll() {
   const skillsSection = document.querySelector('.skills');
@@ -29,7 +30,8 @@ function showSkillsOnScroll() {
 }
 window.addEventListener('scroll', showSkillsOnScroll);
 window.addEventListener('DOMContentLoaded', showSkillsOnScroll);
-// Mobile menu toggle: only bind if element exists
+
+// Resposive menu trên di động
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 if (menu && navbar) {
@@ -38,7 +40,7 @@ if (menu && navbar) {
   };
 }
 
-// Highlight nav link on scroll (section in viewport)
+// Đánh dấu nav link khi đang lướt
 window.onscroll = () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('header nav a');
@@ -57,7 +59,7 @@ window.onscroll = () => {
   });
 };
 
-// Theme (dark mode) toggle
+// Chế độ tối
 let darkmode = localStorage.getItem('darkmode')
 const themeSwitch = document.getElementById('theme-toggle')
 
@@ -71,9 +73,17 @@ const disableDarkmode = () => {
   localStorage.setItem('darkmode', null)
 }
 
-if(darkmode === "active") enableDarkmode()
+if (darkmode === "active") enableDarkmode()
 
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode')
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
+
+const downloadBtn = document.getElementById('download-btn');
+downloadBtn.addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.href = "https://drive.usercontent.google.com/u/0/uc?id=1Z22-lHjWJEq3R16EqIbo8aP0WbuleGiQ&export=download";
+  link.download = "VoAnhKhai-CV.pdf";
+  link.click();
+});

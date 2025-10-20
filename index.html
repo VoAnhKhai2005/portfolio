@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,8 @@
     <title>Võ Anh Khải | Software Engineering</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <!-- Header / Navigation -->
     <header class="header">
@@ -21,25 +20,31 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>   
+            <a href="#contact">Contact</a>
             <button id="theme-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                    <path
+                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                    <path
+                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                </svg>
             </button>
         </nav>
     </header>
 
     <!-- Home -->
-    <section class="home section-appear" id="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Võ Anh Khải<span></span></h1>
             <h3 class="text-animation">I'm a <span></span> from Vietnam.</h3>
             <p>
-				Passionate about learning, exploring new technologies. 
-				With hard work and dedication, I believe it will be a solid foundation to
-				help me achieve big career goals and positively impact the world.
+                Passionate about learning, exploring new technologies.
+                With hard work and dedication, I believe it will be a solid foundation to
+                help me achieve big career goals and positively impact the world.
             </p>
-            
+
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/kaitodeus/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/VoAnhKhai2005"><i class='bx bxl-github'></i></a>
@@ -49,62 +54,81 @@
 
             <div class="btn-group">
                 <a href="#skills" class="btn">View my Skills</a>
-                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn" id="download-btn">Download CV</a>
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section class="about section-appear" id="about">
+    <section class="about" id="about">
         <div class="profile">
             <img src="img/avatar.jpg" alt="Avatar">
-            <img src="img/avatar1.jpg" alt="Avatar">
-            <img src="img/avatar2.jpg" alt="Avatar">
-            <img src="img/avatar3.jpg" alt="Avatar">
         </div>
         <div class="about-text">
             <h2 class="heading">About me</h2>
-            <p>I am a 3rd year student studying at the Ho Chi Minh University of Transport, majoring in Information Technology. 
-                As a software engineer, I am passionate about designing, building, and developing various projects, from websites, applications and especially games.</p>
-            <p><b style="color: #fd9903;">Career Objective</b> <br> Become a Senior Game Developer, have owner's personal game project, which can be done using Unity or Unreal Engine.</p>
-            <p><b style="color: #fd9903;">Hobbies</b> <br> I love playing video games, designing, programming, and learning new technologies.</p>
+            <p><b style="color: #fd9903;">Personal Information</b> <br></p>
             <div class="about-contact">
-                <p><span class="icon">@</span> khaivo300605@gmail.com</p>
-                <p><span class="icon">📍</span> Phường 7, Quận Bình Thạnh, TP.HCM</p>
-                <p><span class="icon">📱</span> +84 012 345 6789</p>
+                <p><b>Fullname</b>: Võ Anh Khải</p>
+                <p><b>Date of Birth</b>: 30/06/2005</p>
+                <p><b>Major</b>: Information Technology</p>
+                <p><b>School</b>: Ho Chi Minh City University of Technology</p>
             </div>
-        <a href="#" class="btn">Download CV</a>
-        </div>
-    </section>
-    
-    <!-- Skills-->
-    <section class="skills section-appear" id="skills">
-        <h2 class="heading">My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="bx bxl-html5 skill-icon" style="color:#e44d26"></i><span>HTML</span></div>
-            <div class="skill-card"><i class="bx bxl-css3 skill-icon" style="color:#1572b6"></i><span>CSS</span></div>
-            <div class="skill-card"><i class="bx bxl-sass skill-icon" style="color:#c69"></i><span>SASS</span></div>
-            <div class="skill-card"><i class="bx bxl-javascript skill-icon" style="color:#f7df1e"></i><span>JAVASCRIPT</span></div>
-            <div class="skill-card"><i class="bx bxl-react skill-icon" style="color:#61dafb"></i><span>REACT JS</span></div>
-            <div class="skill-card"><i class="bx bxl-github skill-icon" style="color:#fff"></i><span>GITHUB</span></div>
-            <div class="skill-card"><i class="bx bxl-nodejs skill-icon" style="color:#3c873a"></i><span>NODE JS</span></div>
-            <div class="skill-card"><i class="bx bxl-firebase skill-icon" style="color:#ffcb2b"></i><span>FIREBASE</span></div>
-            <div class="skill-card"><i class="bx bxl-mongodb skill-icon" style="color:#4db33d"></i><span>MONGODB</span></div>
-            <div class="skill-card"><i class="bx bxl-docker skill-icon" style="color:#2496ed"></i><span>DOCKER</span></div>
+            <p><b style="color: #fd9903;">Career Objective</b> <br> Become a Senior Game Developer, have owner's
+                personal game project, which can be done using Unity or Unreal Engine.</p>
+            <p><b style="color: #fd9903;">Hobbies</b> <br> I love playing video games, designing, programming, and
+                learning new technologies.</p>
+            <p><b style="color: #fd9903;">Certifications & Awards</b>
+                <br> Don't have.
+            </p>
+            <a href="#" class="btn">Download CV</a>
         </div>
     </section>
 
+    <!-- Skills-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My Skills</h2>
+        <div class="skills-content">
+            <div class="skills-grid">
+                <!-- Các skill-card -->
+                <div class="skill-card"><i class="bx bxl-c-plus-plus skill-icon"
+                        style="color:#00599C"></i><span>C++</span><span>80%</span></div>
+                <!--Boxicons không hỗ trợ C# miễn phí nên em thay thế bằng Unity-->                  
+                <div class="skill-card"><i class="bx bxl-unity skill-icon" style="color:#000a11"></i><span>C#
+                    </span><span>80%</span></div>
+                <div class="skill-card"><i class="bx bxl-html5 skill-icon"
+                        style="color:#e44d26"></i><span>HTML5</span><span>80%</span></div>
+                <div class="skill-card"><i class="bx bxl-css3 skill-icon"
+                        style="color:#1572b6"></i><span>CSS3</span><span>80%</span></div>
+                <div class="skill-card"><i class="bx bxl-javascript skill-icon"
+                        style="color:#f7df1e"></i><span>JAVASCRIPT</span><span>80%</span></div>
+                <div class="skill-card"><i class="bx bxl-java skill-icon"
+                        style="color:#f89820"></i><span>JAVA</span><span>70%</span></div>
+                <div class="skill-card"><i class="bx bxl-postgresql skill-icon"
+                        style="color:#6b6b6b"></i><span>PostreSQL</span><span>70%</span></div>
+                <div class="skill-card"><i class="bx bxl-spring-boot skill-icon" style="color:#6DB33F"></i><span>SPRING
+                        BOOT</span><span>65%</span></div>
+                <div class="skill-card"><i class="bx bxl-python skill-icon"
+                        style="color:#bd6d2b"></i><span>Python</span><span>60%</span></div>
+            </div>
+
+            <div class="skills-image">
+                <img src="img/avatar1.jpg" alt="Avatar1">
+            </div>
+        </div>
+    </section>
+
+
     <!-- Projects -->
-    <section class="projects section-appear" id="projects">
+    <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
         <!-- Add project cards here -->
     </section>
 
     <!-- Contact -->
-    <section class="contact section-appear" id="contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="">
-            <div class="input-group">   
+            <div class="input-group">
                 <div class="input-box">
                     <input type="text" placeholder="Full Name">
                     <input type="email" placeholder="Email">
@@ -128,7 +152,7 @@
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <p class="copyright">&copy; Copyright 2025 Võ Anh Khải. All rights reserved.</p>
         <p class="major">Software Engineering</p>
@@ -136,4 +160,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
