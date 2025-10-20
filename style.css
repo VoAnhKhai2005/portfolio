@@ -377,15 +377,16 @@ span {
     align-items: center;
     justify-content: center;
 }
-.skills h2 {
+.skills .heading {
     color: var(--text-color);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 3rem;
-    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0 80px 0;
+    margin: 4rem 0 3rem;
     font-size: 4.5rem;
     text-align: center;
-    padding: 60px 0 80px 0 ;
 }
 .skills-grid {
     display: grid;
