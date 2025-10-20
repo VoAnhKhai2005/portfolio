@@ -1,3 +1,34 @@
+// ===== Hiệu ứng xuất hiện cho các section khi cuộn xuống (fade/slide-in) =====
+function showSectionsOnScroll() {
+  const sections = document.querySelectorAll('section.section-appear');
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  sections.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < windowHeight - 100) {
+      sec.classList.add('section-visible');
+    }
+  });
+}
+window.addEventListener('scroll', showSectionsOnScroll);
+window.addEventListener('DOMContentLoaded', showSectionsOnScroll);
+// ===== Hiệu ứng xuất hiện cho skills khi scroll (Tiếng Việt) =====
+function showSkillsOnScroll() {
+  const skillsSection = document.querySelector('.skills');
+  const skillCards = document.querySelectorAll('.skill-card');
+  if (!skillsSection || !skillCards.length) return;
+
+  const rect = skillsSection.getBoundingClientRect();
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  // Nếu vùng skills đã vào view (ít nhất 100px)
+  if (rect.top < windowHeight - 100) {
+    skillCards.forEach((card, i) => {
+      setTimeout(() => card.classList.add('skill-visible'), i * 90);
+    });
+    window.removeEventListener('scroll', showSkillsOnScroll);
+  }
+}
+window.addEventListener('scroll', showSkillsOnScroll);
+window.addEventListener('DOMContentLoaded', showSkillsOnScroll);
 // Mobile menu toggle: only bind if element exists
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');

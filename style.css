@@ -5,9 +5,19 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Cuộn mượt cho toàn trang */
     font-family: "Verdana", sans-serif;
     }
+/* ===== Hiệu ứng xuất hiện cho các section ===== */
+section.section-appear {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s cubic-bezier(.4,1.4,.6,1), transform 0.7s cubic-bezier(.4,1.4,.6,1);
+}
+section.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 :root {
     --bg-color: white;
     --second-bg-color: white;
@@ -360,6 +370,86 @@ span {
     transform: scale(1.05);
 }
 
+/* ===== Skills Section (Kỹ năng) ===== */
+.skills {
+    background: var(--bg-color);
+    padding: 60px 0 80px 0;
+    align-items: center;
+    justify-content: center;
+}
+.skills h2 {
+    color: var(--text-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 60px 0 80px 0 ;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.skill-card {
+    background: var(--bg-color);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 18px 22px 18px;
+    min-width: 140px;
+    min-height: 140px;
+    transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+.skill-card .skill-icon {
+    font-size: 4.2rem;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.18));
+}
+.skill-card span {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.skill-card:hover {
+    background: #282a36;
+    box-shadow: 0 4px 16px #2cdbd8;
+    transform: scale(0.97) translateY(-6px);
+    z-index: 2;
+}
+.skill-card.skill-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s cubic-bezier(.4,1.4,.6,1), transform 0.6s cubic-bezier(.4,1.4,.6,1);
+}
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .skill-card {
+        min-width: 50vw;
+    }
+}
+
 .wrapper {
     display: grid;
     gap: 3rem;
@@ -502,5 +592,86 @@ span {
     .home-content p {
         max-width: 300px;
         margin: 0 auto;
+    }
+}
+/* ========== Responsive Design ========== */
+@media (max-width: 1200px) {
+    .skills-grid {
+        max-width: 900px;
+        gap: 1.5rem;
+    }
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 40px 10px;
+    }
+    .about-text {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        max-width: 500px;
+    }
+    .skill-card {
+        min-width: 140px;
+        min-height: 120px;
+        padding: 24px 10px 16px 10px;
+    }
+    .about {
+        padding: 30px 5px;
+    }
+    .about-text h2, .contact h2, .projects h2, .skills .heading {
+        font-size: 2.8rem;
+    }
+    section {
+        padding: 6rem 2% 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        max-width: 98vw;
+        gap: 1rem;
+    }
+    .skill-card {
+        min-width: 90vw;
+        font-size: 1rem;
+        padding: 18px 4px 12px 4px;
+    }
+    .about {
+        padding: 18px 2px;
+    }
+    .about-text h2, .contact h2, .projects h2, .skills .heading {
+        font-size: 2rem;
+    }
+    .about-text p, .skills-desc, .contact form, .projects p {
+        font-size: 1.1rem;
+    }
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+    .btn, .btn-group a {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+    .contact div.social-icons {
+        gap: 10px;
+        margin-top: 18px;
+    }
+    .footer {
+        padding: 10px 0;
     }
 }
