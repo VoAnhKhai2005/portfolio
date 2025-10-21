@@ -6,13 +6,16 @@
 > A personal portfolio website built with HTML, CSS, and JavaScript — showcasing Vo Anh Khai’s profile, skills, certificates, and projects.
 
 portfolio/
-├─ index.html
-├─ style.css
-├─ script.js
-├─ img/
-│ ├─ avatar.png
-│ └─ project1.png
-└─ README.md
+├── index.html          # Main HTML file (homepage)
+├── style.css           # Main stylesheet
+├── script.js           # Main JavaScript file
+│
+├── img/                # Image assets
+│   ├── avatar.png      # Personal/profile image
+│   ├── project1.png    # Example project image
+│   └── ...             # Other images
+│
+└── README.md           # Project documentation
 
 ## 🌐 Live Demo
 📍 [https://voanhkhai2005.github.io/portfolio/](https://voanhkhai2005.github.io/portfolio/)
