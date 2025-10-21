@@ -33,6 +33,7 @@ It’s fully static (no backend required) and hosted via **GitHub Pages**.
 ---
 
 ## 📂 Folder Structure
+```
 portfolio/
 ├── index.html          # Main HTML file (homepage)
 ├── style.css           # Main stylesheet
