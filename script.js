@@ -1,4 +1,4 @@
-// ===== Hiệu ứng xuất hiện cho các section khi cuộn xuống (fade/slide-in) =====
+// Hiệu ứng xuất hiện cho các section khi cuộn xuống (fade/slide-in)
 function showSectionsOnScroll() {
   const sections = document.querySelectorAll('section.section-appear');
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -12,7 +12,7 @@ function showSectionsOnScroll() {
 window.addEventListener('scroll', showSectionsOnScroll);
 window.addEventListener('DOMContentLoaded', showSectionsOnScroll);
 
-// ===== Hiệu ứng xuất hiện cho skills khi scroll (Tiếng Việt) =====
+// Hiệu ứng xuất hiện cho skills khi scroll (Tiếng Việt)
 function showSkillsOnScroll() {
   const skillsSection = document.querySelector('.skills');
   const skillCards = document.querySelectorAll('.skill-card');
@@ -80,6 +80,7 @@ themeSwitch.addEventListener("click", () => {
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
 
+// Tải CV
 const downloadBtn = document.getElementById('download-btn');
 downloadBtn.addEventListener('click', () => {
   const link = document.createElement('a');

@@ -18,7 +18,9 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#career">Career</a>
             <a href="#skills">Skills</a>
+            <a href="#certificates">Certifications</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             <button id="theme-toggle">
@@ -37,6 +39,7 @@
     <!-- Home -->
     <section class="home" id="home">
         <div class="home-content">
+            <img src="img/avt/avatar4.jpg" alt="Avatar">
             <h1>Võ Anh Khải<span></span></h1>
             <h3 class="text-animation">I'm a <span></span> from Vietnam.</h3>
             <p>
@@ -62,7 +65,7 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="profile">
-            <img src="img/avatar.jpg" alt="Avatar">
+            <img src="img/avt/avatar.jpg" alt="Avatar">
         </div>
         <div class="about-text">
             <h2 class="heading">About me</h2>
@@ -70,30 +73,64 @@
             <div class="about-contact">
                 <p><b>Fullname</b>: Võ Anh Khải</p>
                 <p><b>Date of Birth</b>: 30/06/2005</p>
-                <p><b>Major</b>: Information Technology</p>
-                <p><b>School</b>: Ho Chi Minh City University of Technology</p>
+                <p><b>Major</b>: Information Technology (3rd year)</p>
+                <p><b>School</b>: Ho Chi Minh City University of Transport (UTH)</p>
             </div>
             <p><b style="color: #fd9903;">Career Objective</b> <br> Become a Senior Game Developer, have owner's
                 personal game project, which can be done using Unity or Unreal Engine.</p>
             <p><b style="color: #fd9903;">Hobbies</b> <br> I love playing video games, designing, programming, and
                 learning new technologies.</p>
-            <p><b style="color: #fd9903;">Certifications & Awards</b>
-                <br> Don't have.
-            </p>
-            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Career -->
+    <section class="career" id="career">
+        <h2 class="heading">Career</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>02 Vo Oanh, Thanh My Tay Ward, Ho Chi Minh City</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                    <h3>Internship</h3>
+                    <p>... Ho Chi Minh City</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2027</div>
+                <div class="timeline-content">
+                    <h3>Fresher</h3>
+                    <p>... Ho Chi Minh City</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2030</div>
+                <div class="timeline-content">
+                    <h3>Senior...</h3>
+                    <p>... Ho Chi Minh City</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills-->
     <section class="skills" id="skills">
-        <h2 class="heading">My Skills</h2>
+        <h2 class="heading">Skills</h2>
         <div class="skills-content">
             <div class="skills-grid">
-                <!-- Các skill-card -->
                 <div class="skill-card"><i class="bx bxl-c-plus-plus skill-icon"
                         style="color:#00599C"></i><span>C++</span><span>80%</span></div>
-                <!--Boxicons không hỗ trợ C# miễn phí nên em thay thế bằng Unity-->                  
-                <div class="skill-card"><i class="bx bxl-unity skill-icon" style="color:#000a11"></i><span>C#
+                <!--Boxicons không hỗ trợ C# miễn phí nên em thay thế bằng Unity-->
+                <div class="skill-card"><i class="bx bxl-unity skill-icon" style="color:#3f3f3f"></i><span>C#
                     </span><span>80%</span></div>
                 <div class="skill-card"><i class="bx bxl-html5 skill-icon"
                         style="color:#e44d26"></i><span>HTML5</span><span>80%</span></div>
@@ -106,56 +143,140 @@
                 <div class="skill-card"><i class="bx bxl-postgresql skill-icon"
                         style="color:#6b6b6b"></i><span>PostreSQL</span><span>70%</span></div>
                 <div class="skill-card"><i class="bx bxl-spring-boot skill-icon" style="color:#6DB33F"></i><span>SPRING
-                        BOOT</span><span>65%</span></div>
+                        BOOT</span><span>60%</span></div>
                 <div class="skill-card"><i class="bx bxl-python skill-icon"
-                        style="color:#bd6d2b"></i><span>Python</span><span>60%</span></div>
+                        style="color:#bd6d2b"></i><span>Python</span><span>50%</span></div>
             </div>
 
             <div class="skills-image">
-                <img src="img/avatar1.jpg" alt="Avatar1">
+                <img src="img/avt/avatar1.jpg" alt="Avatar1">
             </div>
         </div>
     </section>
 
+    <!-- Certifications-->
+    <section class="certificates" id="certificates">
+        <h2 class="heading">Certifications</h2>
+        <div class="certificate-container">
+            <div class="certificate-item">
+                <img src="./img/cert/Csharp-cert.png" alt="C#-cert">
+                <h2>C# Basic</h2>
+                <div class="rating">
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                </div>
+                <p>Completed</p>
+            </div>
+
+            <div class="certificate-item">
+                <img src="./img/cert/JavaScript-cert.png" alt="JavaScript-cert">
+                <h2>JavaScript Basic</h2>
+                <div class="rating">
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                    <i class='bx bxs-star' id="star"></i>
+                </div>
+                <p>Completed</p>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Projects -->
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
-        <!-- Add project cards here -->
+        <div class="projects-container">
+            <div class="project-box">
+                <a href="https://github.com/VoAnhKhai2005/tease-ur-crush" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+                <div class="project-info">
+                    <img src="./img/proj/project_crush.png" alt="project1">
+                    <h4>Tease your Crush (Completed)</h4>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <a href="https://github.com/VoAnhKhai2005/UTH-WM" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+                <div class="project-info">
+                    <img src="./img/proj/project_wm.png" alt="project2">
+                    <h4>UTH - WM (Completed)</h4>
+                    <p>FullStack Developer</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <a href="https://github.com/VoAnhKhai2005/Medical-Consultation-Website" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+                <div class="project-info">
+                    <img src="./img/proj/project_medic.png" alt="project3">
+                    <h4>Medical Consultation Website (In Progress)</h4>
+                    <p>UI/UX Design</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <a href="https://github.com/TheBlueStars/EV-Co-ownership-Cost-sharing-System" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+                <div class="project-info">
+                    <img src="./img/proj/project_evshare.png" alt="project4">
+                    <h4>EV-Co-ownership-Cost-sharing-System (In Progress)</h4>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
-                </div>
+        <div class="contact-container">
+            <div class="contact-img">
+                <img src="img/avt/avatar2.jpg" alt="Contact Image">
             </div>
 
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+            <div class="contact-form">
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-box">
+                            <input type="number" placeholder="Phone Number">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="input-group-2">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" class="btn">
+                    </div>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kaitodeus/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/VoAnhKhai2005"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/kaitovo8952/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/_kai.desu/"><i class='bx bxl-instagram'></i></a>
+                </div>
             </div>
-        </form>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/kaitodeus/?locale=en_US"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/VoAnhKhai2005"><i class='bx bxl-github'></i></a>
-            <a href="https://www.facebook.com/kaitovo8952/"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/_kai.desu/"><i class='bx bxl-instagram'></i></a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <p class="copyright">&copy; Copyright 2025 Võ Anh Khải. All rights reserved.</p>
-        <p class="major">Software Engineering</p>
+        <p class="major">Information Technology</p>
     </footer>
 
     <script src="script.js"></script>
