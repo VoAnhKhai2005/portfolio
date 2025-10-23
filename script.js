@@ -12,6 +12,33 @@ function showSectionsOnScroll() {
 window.addEventListener('scroll', showSectionsOnScroll);
 window.addEventListener('DOMContentLoaded', showSectionsOnScroll);
 
+// Hiệu ứng xuất hiện cho Hobbies section khi load trang
+function showHobbiesOnLoad() {
+  const hobbiesSection = document.querySelector('.hobbies');
+  if (hobbiesSection) {
+    hobbiesSection.classList.add('section-appear');
+  }
+}
+window.addEventListener('DOMContentLoaded', showHobbiesOnLoad);
+
+// Hiệu ứng xuất hiện cho hobbies khi scroll
+function showHobbiesOnScroll() {
+  const hobbiesSection = document.querySelector('.hobbies');
+  const hobbyCards = document.querySelectorAll('.hobby-card');
+  if (!hobbiesSection || !hobbyCards.length) return;
+
+  const rect = hobbiesSection.getBoundingClientRect();
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  if (rect.top < windowHeight - 100) {
+    hobbyCards.forEach((card, i) => {
+      setTimeout(() => card.classList.add('hobby-visible'), i * 150);
+    });
+    window.removeEventListener('scroll', showHobbiesOnScroll);
+  }
+}
+window.addEventListener('scroll', showHobbiesOnScroll);
+window.addEventListener('DOMContentLoaded', showHobbiesOnScroll);
+
 // Hiệu ứng xuất hiện cho skills khi scroll (Tiếng Việt)
 function showSkillsOnScroll() {
   const skillsSection = document.querySelector('.skills');
